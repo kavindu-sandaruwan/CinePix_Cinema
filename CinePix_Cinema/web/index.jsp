@@ -16,14 +16,14 @@
                     <div class="container-fluid">
                         <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
                             <div class="container">
-                                <a class="navbar-brand" href="index.html">CinePix Cinema</a>
+                                <a class="navbar-brand" href="index.jsp">CinePix Cinema</a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                            <a class="nav-link active" aria-current="page" href="index.jsp">HOME</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">MOVIES</a>
@@ -53,8 +53,8 @@
                                     <button type="button" class="btn btn-outline-danger">BUY TICKETS</button>
                                     -->
                                     <form class="d-flex">
-                                        <a class="btn btn-outline-primary me-2" href="BuyTickets.html" role="button">BUY TICKETS</a>
-                                        <a class="btn btn-outline-danger" href="Login.jsp" role="button">LOGIN</a>
+                                        <a class="btn btn-outline-primary me-2" href="buyTickets.jsp" role="button">BUY TICKETS</a>
+                                        <a class="btn btn-outline-danger" href="login.jsp" role="button">LOGIN</a>
                                     </form>
                                     <!--
                                     <form class="d-flex" role="search">
@@ -166,7 +166,7 @@
                                 <div class="col-6 col-md-2 mb-3">
                                     <h5>CinePix Cinema</h5>
                                     <ul class="nav flex-column">
-                                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">HOME</a></li>
+                                        <li class="nav-item mb-2"><a href="index.jsp" class="nav-link p-0 text-muted">HOME</a></li>
                                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">MOVIES</a></li>
                                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">LOCATIONS</a></li>
                                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">DEALS & EXCLUSIVES</a></li>
