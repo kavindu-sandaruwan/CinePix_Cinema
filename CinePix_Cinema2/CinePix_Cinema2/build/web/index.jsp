@@ -95,13 +95,13 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="Carousel-Item/avatar2_the_way_of_water.jpg" class="d-block w-100" alt="">
+                                    <img src="Carousel-Item/1063147.jpg" class="d-block w-100" alt="">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="Carousel-Item/avatar2_the_way_of_water.jpg" class="d-block w-100" alt="">
+                                    <img src="Carousel-Item/1286476.jpg" class="d-block w-100" alt="">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="Carousel-Item/avatar2_the_way_of_water.jpg" class="d-block w-100" alt="">
+                                    <img src="Carousel-Item/1292803.jpg" class="d-block w-100" alt="">
                                 </div>
                             
                             </div>
