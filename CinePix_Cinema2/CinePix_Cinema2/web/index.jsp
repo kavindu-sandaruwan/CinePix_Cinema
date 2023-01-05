@@ -29,8 +29,9 @@
             
             <div class="row">
                 <div class="col">
-                    <div class="container-fluid">
-                        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+                    <div class="navigation-wrap start-header start-style fixed-top scroll">
+                        
+                        <nav class="navbar navbar-expand-lg navbar-dark">
                             <div class="container">
                                 <a class="navbar-brand" href="index.jsp">CinePix Cinema</a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,20 +89,57 @@
                 <div class="col">
                     <div class="container-fluid">
                         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
+                            <div class="carousel-indicators bg-transparent text-dark">
                                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="Carousel-Item/1063147.jpg" class="d-block w-100" alt="">
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <img src="Carousel-Item/1063147.jpg" class="d-block w-100" alt="">
+                                            
+                                        </div>
+                                        <div class="col-lg-1 bg-primary bg-gradient bg-transparent">
+                                            <a class="link-dangerous position-absolute bottom-0 end-1 mb-5" href="buyTickets.jsp" style="color: red; font-size: 18px; text-decoration-line: none;"> BUY <br> TICKETS <br> ONLINE </a>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="Carousel-Item/1286476.jpg" class="d-block w-100" alt="">
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <img src="Carousel-Item/1286476.jpg" class="d-block w-100" alt="">
+                                            <div class="carousel-caption d-none d-md-block bg-transparent">
+                                                <h4 class="bg-transparent text-dark">AVATAR: THE WAY OF WATER(3D)</h4>
+                                                <h5 class="bg-transparent text-dark me-4" style="color: red; font-size: 22px;"><b class="bg-transparent text-dark">BUY TICKETS ONLINE</b></h5>
+                                                <a class="btn btn-primary" href="#" role="button">BUY TICKETS</a>
+                                                <a class="btn btn-success" href="#" role="button">WATCH TRAILER</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 bg-primary bg-gradient bg-transparent">
+                                            <a class="link-dangerous position-absolute bottom-0 end-1 mb-5" href="buyTickets.jsp" style="color: red; font-size: 18px; text-decoration-line: none;"> BUY <br> TICKETS <br> ONLINE </a>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="Carousel-Item/1292803.jpg" class="d-block w-100" alt="">
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <img src="Carousel-Item/1292803.jpg" class="d-block w-100" alt="">
+                                            <div class="carousel-caption d-none d-md-block bg-transparent">
+                                                <h4 class="bg-transparent text-dark">AVATAR: THE WAY OF WATER(3D)</h4>
+                                                <h5 class="heading bg-transparent text-dark me-4"  style="color: red; font-size: 22px;"><b class="bg-transparent text-dark">BUY TICKETS ONLINE</b></h5>
+                                                <a class="btn btn-primary" href="#" role="button">BUY TICKETS</a>
+                                                <a class="btn btn-success" href="#" role="button">WATCH TRAILER</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-1 bg-primary bg-gradient bg-transparent">
+                                            <a class="link-dangerous position-absolute bottom-0 end-1 mb-5" href="buyTickets.jsp" style="color: red; font-size: 18px; text-decoration-line: none;"> BUY <br> TICKETS <br> ONLINE </a>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             
                             </div>
@@ -378,7 +416,7 @@
                 dots:false,
                 
                 autoplay:true,
-                autoplayTimeout:5000,
+                autoplayTimeout:10000,
                 autoplayHoverPause:true,
                 stagePading:50,
                 
