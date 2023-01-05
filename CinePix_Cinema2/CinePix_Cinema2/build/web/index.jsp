@@ -132,125 +132,125 @@
             
                                 <div class="cards">
                                     <label for="s1" id="slide1">
-                                <div class="card">
-                                    <div class="image">
-                                        <img src="109.jpg" alt="">
-                                        <div class="dots">
-                                            <div class="dot1"></div>
-                                            <div class="dot2"></div>
-                                            <div class="dot3"></div>
-                                        </div>
-                                    </div>
-                                    <div class="infos">
-                                        <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
-                                        <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="109.jpg" alt="">
+                                                <div class="dots">
+                                                    <div class="dot1"></div>
+                                                    <div class="dot2"></div>
+                                                    <div class="dot3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="infos">
+                                                <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
+                                                <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
                                         
-                                        <a href="#" class="btn-contact">DETAILS</a>
-                                        <div class="socials">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                            <i class="fa-regular fa-bookmark"></i>
-                                            <i class="fa-solid fa-share-nodes"></i>
+                                                <a href="#" class="btn-contact">DETAILS</a>
+                                                <div class="socials">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-solid fa-share-nodes"></i>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </label>
+                                    </label>
                                     <label for="s2" id="slide2">
-                                <div class="card">
-                                    <div class="image">
-                                        <img src="108.jpg" alt="">
-                                        <div class="dots">
-                                            <div class="dot1"></div>
-                                            <div class="dot2"></div>
-                                            <div class="dot3"></div>
-                                        </div>
-                                    </div>
-                                    <div class="infos">
-                                        <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
-                                        <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="108.jpg" alt="">
+                                                <div class="dots">
+                                                    <div class="dot1"></div>
+                                                    <div class="dot2"></div>
+                                                    <div class="dot3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="infos">
+                                                <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
+                                                <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
                             
-                                        <a href="#" class="btn-contact">DETAILS</a>
-                                        <div class="socials">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                            <i class="fa-regular fa-bookmark"></i>
-                                            <i class="fa-solid fa-share-nodes"></i>
+                                                <a href="#" class="btn-contact">DETAILS</a>
+                                                <div class="socials">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-solid fa-share-nodes"></i>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </label>
+                                    </label>
                                     <label for="s3" id="slide3">
-                                <div class="card">
-                                    <div class="image">
-                                        <img src="110.jpg" alt="">
-                                        <div class="dots">
-                                            <div class="dot1"></div>
-                                            <div class="dot2"></div>
-                                            <div class="dot3"></div>
-                                        </div>
-                                    </div>
-                                    <div class="infos">
-                                        <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
-                                        <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="110.jpg" alt="">
+                                                <div class="dots">
+                                                    <div class="dot1"></div>
+                                                    <div class="dot2"></div>
+                                                    <div class="dot3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="infos">
+                                                <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
+                                                <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
                             
-                                        <a href="#" class="btn-contact">DETAILS</a>
-                                        <div class="socials">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                            <i class="fa-regular fa-bookmark"></i>
-                                            <i class="fa-solid fa-share-nodes"></i>
+                                                <a href="#" class="btn-contact">DETAILS</a>
+                                                <div class="socials">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-solid fa-share-nodes"></i>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </label>
+                                    </label>
                                     <label for="s4" id="slide4">
-                                <div class="card">
-                                    <div class="image">
-                                        <img src="109.jpg" alt="">
-                                        <div class="dots">
-                                            <div class="dot1"></div>
-                                            <div class="dot2"></div>
-                                            <div class="dot3"></div>
-                                        </div>
-                                    </div>
-                                    <div class="infos">
-                                        <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
-                                        <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="109.jpg" alt="">
+                                                <div class="dots">
+                                                    <div class="dot1"></div>
+                                                    <div class="dot2"></div>
+                                                    <div class="dot3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="infos">
+                                                <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
+                                                <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
                                         
-                                        <a href="#" class="btn-contact">DETAILS</a>
-                                        <div class="socials">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                            <i class="fa-regular fa-bookmark"></i>
-                                            <i class="fa-solid fa-share-nodes"></i>
+                                                <a href="#" class="btn-contact">DETAILS</a>
+                                                <div class="socials">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-solid fa-share-nodes"></i>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </label>
+                                    </label>
                                     <label for="s5" id="slide5">
-                                <div class="card">
-                                    <div class="image">
-                                        <img src="108.jpg" alt="">
-                                        <div class="dots">
-                                            <div class="dot1"></div>
-                                            <div class="dot2"></div>
-                                            <div class="dot3"></div>
-                                        </div>
-                                    </div>
-                                    <div class="infos">
-                                        <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
-                                        <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="108.jpg" alt="">
+                                                <div class="dots">
+                                                    <div class="dot1"></div>
+                                                    <div class="dot2"></div>
+                                                    <div class="dot3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="infos">
+                                                <span class="name">WAR FOR THE PLANET OF THE EARTH</span>
+                                                <span class="lorem">After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.</span>
                             
-                                        <a href="#" class="btn-contact">DETAILS</a>
-                                        <div class="socials">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                            <i class="fa-regular fa-heart"></i>
-                                            <i class="fa-regular fa-bookmark"></i>
-                                            <i class="fa-solid fa-share-nodes"></i>
+                                                <a href="#" class="btn-contact">DETAILS</a>
+                                                <div class="socials">
+                                                    <i class="fa-solid fa-cart-shopping"></i>
+                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-regular fa-bookmark"></i>
+                                                    <i class="fa-solid fa-share-nodes"></i>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </label>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -260,9 +260,7 @@
             <div class="row">
                 <div calss="col">
                     <div class="container-fluid my-5">
-                        <h1 class="text-center fw-bold display-2 mb-3">Owl<span class="text-danger"> Carousel </span></h1>
-                        <div class="row">
-                            
+                        <h1 class="display-5 mb-3"> COMING SOON </h1>
                             <div class="owl-carousel owl-theme">
                                 <div class="item mb-4">
                                     <div class="card border-0 shadow">
@@ -275,7 +273,7 @@
                         
                             </div>
                     
-                        </div>
+                        
                     </div>
                 
                 </div>
