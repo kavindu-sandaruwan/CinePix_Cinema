@@ -22,6 +22,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
+        <!--Footer--> 
+        
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -355,7 +359,7 @@
                     
                 </div>
             </div>
-            <div class="row">
+<!--            <div class="row">
                 <div class="col">
                     <div class="container-fluid">
                         <footer class="py-5">
@@ -395,7 +399,73 @@
                     </div>
                 </div>
                 
-            </div>
+            </div>-->
+
+            <footer>
+                <div class="main-content">
+                    <div class="left box">
+                        <h2>About us</h2>
+                        <div class="content">
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer</p>
+                            <div class="social">
+                                <a href="#"><span id="fb" class="fab fa-facebook-f"></span></a>
+                                <!--&nbsp; &nbsp;-->
+                                <!--<a href="#"><span id="twitter" class="fab fa-twitter"></span></a>-->
+                                <!--&nbsp; &nbsp;-->
+                                <a href="#"><span id="insta" class="fab fa-instagram"></span></a>
+                                <!--&nbsp; &nbsp;-->
+                                <a href="#"><span id="twitter" class="fab fa-twitter"></span></a>
+                                <!--&nbsp; &nbsp;--> 
+                                <a href="#"><span id="youtube" class="fab fa-youtube"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="center box">
+                        <h2>Address</h2>
+                        <div class="content">
+                            <div class="place">
+                                <span class="fas fa-map-marker-alt"></span>
+                                <span class="text">NSBM Green University Town, Pitipana, Homagama</span>
+                            </div>
+                            <div class="phone">
+                                <span class="fas fa-phone-alt"></span>
+                                <span class="text">+94 112 342 769</span>
+                            </div>
+                            <div class="email">
+                                <span class="fas fa-envelope"></span>
+                                <span class="text">cinePix123@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="left box">
+                        <h2>Contact Us</h2>
+                        <div class="content">
+                            <form action="#">
+                                <div class="email">
+                                    <div class="text">Email *</div>
+                                    <input type="email" required>
+                                </div>
+                                <div class="msg">
+                                    <div class="text">Message</div>
+                                    <textarea rows="2" cols="35" required></textarea>
+                                </div>
+                                <div class="btn">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="button">
+                    <center>
+                        <span class="credit">Created by <a href="#">CinePixCinema</a> | </span>
+                        <span class="far fa-copyright"></span><span>2023 All rights reserved.</span>
+                    </center>
+                </div>
+            </footer>
         </div>
         
         <script type="text/javascript">

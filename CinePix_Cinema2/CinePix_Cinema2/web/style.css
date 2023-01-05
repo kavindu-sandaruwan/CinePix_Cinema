@@ -240,3 +240,230 @@ input {
     width: 720px;
     height: 320px;
 }
+
+
+
+/* Footer CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    /*background-color: black;*/
+    /*color: #97CCF0;*/
+}
+
+footer{
+    /*background-color: black;*/
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding: 15px 25px;
+}
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .conten{
+    margin: 20px 0 0 0;
+    /*-------------------------------------*/
+    position: relative;
+    /*-------------------------------------*/
+}
+
+/*----------------------------------------*/
+/*.box .content:before{
+    position: absolute;
+    content: '';
+    top: 38px;
+    height: 2px;
+    width: 100%;
+    background: #6fa8dc;
+}*/
+
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 8%;
+    background: #f12020;
+    top: 38px;
+    
+}
+/*----------------------------------------*/
+
+.box .content p{
+    text-align: justify;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0; 
+}
+
+.left .content .social a{
+    padding: 0 2px;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    /*background: #6fa8dc;*/
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    border-style: solid;
+    transition: 0.4s;
+}
+
+#fb{
+    color: rgb(66, 103, 178);
+}
+#fb:hover{
+    box-shadow: rgba(66,103,178,0.8) 0 0 5px 5px ;
+}
+
+#insta{
+    color: rgb(253, 12, 92);
+}
+#insta:hover{
+    box-shadow: rgba(253, 12, 92, 0.8) 0 0 5px 5px ;
+}
+
+#twitter{
+    color: rgb(29, 161, 242);
+}
+#twitter:hover{
+    box-shadow: rgba(29, 161, 242, 0.8) 0 0 5px 5px ;
+}
+
+#youtube{
+    color: rgb(255, 0, 0);
+}
+#youtube:hover{
+    box-shadow: rgba(255, 0, 0, 0.8) 0 0 5px 5px;
+}
+
+.left .content .social a span:hover{
+    background: #f1202;
+}
+
+.center .content .fas{
+    font-size: 1.2rem;
+    background: #6fa8dc;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover{
+    background: #0b4171;
+}
+
+.center .content .text{
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 10px 0;
+}
+
+.right form .text{
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg{
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 0.95rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+
+.right form input{
+    height: 35px;
+}
+
+.right form .btn{
+    margin-top: 10px;
+}
+
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right form .btn button:hover{
+    background: #000;
+}
+
+.botton center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.botton center span{
+    color: #656565;
+}
+
+.bottontton center a{
+    color: #f12020;
+    text-decoration: none;
+}
+
+.bottom center a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+}
