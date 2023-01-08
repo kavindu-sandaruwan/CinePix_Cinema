@@ -1,0 +1,540 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 8, 2023, 3:54:19 PM
+    Author     : vinuri
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,800;1,300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+      
+}
+
+/*custom scroll bar*/
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: #020307;
+}
+html::-webkit-scrollbar-thumb{
+    background: #ffff00;
+    border-radius: 5rem;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background: #ff9e1f;
+}
+
+body{
+    background: #000025;
+    color: #fff;
+    
+}
+section{
+    padding: 4.5rem 0 1.5rem;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+}
+header.shadow{
+    background: #000025;
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+/*.logo .bx{
+    font-size: 24px;
+    color: #000025;
+}*/
+.bx .bxs-movie-play{
+    color: #ffff00;
+    font-size: 40px;
+}
+.navigation{
+    display: flex;
+    column-gap: 5rem;
+}
+.navigation li{
+    position: relative;
+}
+.navigation a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    
+}
+.navigation a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffff00;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+.navigation a:hover::after,
+.navigation .home-active::after{
+    width: 100%;
+    
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000001;
+    display: none;
+}
+.btn{
+    padding: 0.7rem 1.4rem;
+    background: #ffff00;
+    color: #000025;
+    font-weight: 400;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background: #ff9e1f;
+}
+
+
+
+
+
+/*image*/
+.bg-1 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*z-index: -1;*/
+    filter: brightness(80%);
+}
+
+
+/*image content*/
+.p-1{
+    position: absolute;
+    height: 250px;
+    width: 550px;
+    top: 400px;
+    right: 800px;
+}
+
+.cinema{
+    background-color: #3939b8;
+    color: #fff;
+    padding: 2px 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    word-spacing: 7.5px;
+}
+
+
+.p-1 h1 span{
+    letter-spacing: 7px;
+    cursor: pointer;
+    line-height: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+
+/*Movie Name Text animation*/
+h1 span {
+  transition: 0.5s ease-out;
+}
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+/* h1:hover span:nth-child(1):after {
+  content: "";
+} */
+h1:hover span:nth-child(3) {
+  margin-left: 20px;
+}
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #3D85C6, 0 0 20px #3D85C6, 0 0 40px #3D85C6;
+}
+
+
+/*Duration*/
+.duration h2{
+    line-height: 50px;
+    color: white;
+    word-spacing: 5px;
+    /*color: hsl(0, 0%, 28%);*/
+    font-size: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    padding: 0px;
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4.5s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+
+/*Rating*/
+.rating{
+    line-height: 50px;
+    font-family: "Jockey One";  
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    word-spacing: 8px;
+} 
+
+.rating .checked{
+    color: red;
+    font-size: 25px;
+    letter-spacing: .1em;
+    /*word-spacing: 5px;*/
+}
+
+.rating span{
+    color: white;
+    font-size: 20px;
+}
+.rating span .count{
+    color: white;
+    font-size: 20px;
+}
+
+
+/*Content-1 Text 1*/
+.content-1 .text1{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 780px;
+    right: 1150px;
+    word-spacing: 7px;
+}
+
+
+/*Horizontal Line 1*/
+.line1{
+    margin: 20px;
+    padding: 50px;
+    position: absolute;
+    top: 800px;
+    right: 100px;
+}
+
+.dates .dropbtn{
+    position: absolute;
+    top: 780px;
+    right: 800px;
+}
+
+
+
+/*Time Slot*/
+.timeSlot{
+    position: relative;
+    /*background: white;*/
+    width: 700px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    transition: 0.5s;
+    flex-direction: row;
+/*    margin: 4px 2px;
+    padding: 15px 50px;*/
+    right: -200px;
+    top: 910px;
+}
+
+.timeSlot a:hover{
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+a:before{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    /*background: white;*/
+}
+
+
+a span{
+    position: relative;
+    z-index: 1;
+}
+
+
+/*Horizontal Line 2*/
+.line2{
+    margin: 20px;
+    padding: 50px;
+    position: absolute;
+    top: 910px;
+    right: 100px;
+}
+
+
+
+/*Table 1*/
+.table1{
+    position: absolute;
+    top: 880px;
+    /*background: gainsboro;*/
+    width: 620px;
+    height: 350px;
+    right: 750px;
+    top: 1100px;
+    text-align: justify;
+}
+
+
+.table1 .storyLine .head{
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+    line-height: 50px;
+    position: absolute;
+    top: -50px;
+    right: 300px;
+}
+
+.table1 .storyLine p{
+    text-align: justify;
+    line-height: 30px;
+    position: absolute;
+    top: 40px;
+}
+
+
+
+/*Table 2 - Official Trailer*/
+.table2{
+    position: absolute;
+    top: 1080px;
+    right: 170px;
+}
+
+
+
+
+/*FOOTER*/  
+.footer{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container{
+    max-width: 968px;
+    margin: auto;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-menu1 ul{
+    list-style: none;
+    
+}
+.footer-col{
+    width: 50%;
+    padding: 0 15px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.social .bx{
+    background: #fff;
+    padding: 2px;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 4px solid rgb(2,3,7,0.4);
+    color: #000025;
+}
+.social .bx:hover{
+    background: #000025;
+    color: #fff;
+    transition: 0.2s all linear;
+}
+.copyright{
+    padding: 20px;
+    text-align: center;
+    color: #bbbbbb;
+    font-size: 15px;
+}
+
+
+
+
+/*responsive*/
+@media(max-width: 1080px){
+    .home-text{
+        padding: 0 100px;
+    }
+}
+@media(max-width: 991px){
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+    .home-text{
+        padding: 0 4%;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+}
+@media(max-width: 795px){
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        display: initial;
+        color: #fff;
+    }
+    #menu-icon:hover{
+        color: #ffff00;
+    }
+    header.shadow #menu-icon{
+        color: #fff;
+    }
+    .navigation{
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000025;
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2s all linear;
+        text-align: center;
+    }
+    .navigation a{
+        color: #fff;
+    }
+    .navigation a:hover{
+        color: #ffff00;
+        border-bottom: 1px solid #ffff00;
+    }
+    .navigation a::after{
+        display: none;
+    }
+    .navigation.active{
+        top: 100%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .btn{
+        padding: 0.6rem 1.2rem;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(160px,auto))
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 472px){
+    .news form .email{
+        width: auto;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .footer-col{
+        width: 100%;
+    }
+}
+@media(max-width: 370px){
+    header{
+        padding: 6px 4%;
+    }
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+    .play{
+        right: 2rem;
+        bottom: 8%;
+    }
+    .play .bx{
+        padding: 7px;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(140px,auto))
+    }
+    .box .box-img{
+        height: 240px;
+    }
+}
