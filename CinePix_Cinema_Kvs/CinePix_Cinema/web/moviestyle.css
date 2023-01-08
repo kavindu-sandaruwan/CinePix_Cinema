@@ -282,8 +282,6 @@ h1:hover span {
     font-weight: 400;
     transition: 0.5s;
     flex-direction: row;
-/*    margin: 4px 2px;
-    padding: 15px 50px;*/
     right: -200px;
     top: 910px;
 }
@@ -298,7 +296,6 @@ a:before{
     content: '';
     position: absolute;
     inset: 5px;
-    /*background: white;*/
 }
 
 
@@ -323,7 +320,6 @@ a span{
 .table1{
     position: absolute;
     top: 880px;
-    /*background: gainsboro;*/
     width: 620px;
     height: 350px;
     right: 750px;
