@@ -77,7 +77,7 @@
         </div>
         
         
-        <!--Horizontal Line-->
+        <!--Horizontal Line 1-->
         <div class="line1">
             <hr size="1.5" width="1200px" color="yellow">
         </div>
