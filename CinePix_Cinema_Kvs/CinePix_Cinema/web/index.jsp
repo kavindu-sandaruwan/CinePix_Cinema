@@ -297,7 +297,7 @@
                 <a href="#"><i class='bx bxl-instagram' ></i></a>
                 <a href="#"><i class='bx bxl-tiktok' ></i></a>
             </div>
-            </div>
+           
         </section>
         
         <!-- copyrights -->
