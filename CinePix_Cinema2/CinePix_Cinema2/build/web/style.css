@@ -255,16 +255,19 @@ input {
     /*color: #97CCF0;*/
 }
 
-footer{
+.footer{
     /*background-color: black;*/
     position: fixed;
     bottom: 0px;
     width: 100%;
     background: #111;
+    top:490px;
 }
 
 .main-content{
     display: flex;
+    
+
 }
 
 .main-content .box{
