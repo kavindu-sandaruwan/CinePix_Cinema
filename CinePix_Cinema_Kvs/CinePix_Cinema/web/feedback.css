@@ -1,0 +1,60 @@
+h3{
+    text-align: left;
+}
+
+body{
+/*    background-image: linear-gradient(to bottom right,#000025,white);*/
+    background-color: #000025;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;    
+}
+
+p{
+    word-spacing: 10px;
+}
+
+label{
+    font-size: 15px;
+}
+
+.form_content{
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 25%;
+    color: white;
+    
+}
+.btn-primary{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+/*    margin-right: 395px;*/
+    background: #ffff00;
+    border-radius: 0.5rem;
+    color: black;
+    border: 0;
+    margin-left: 280px;
+}
+
+.btn-primary:hover{
+    background: #ff9e1f;
+}
+
+@media screen and (max-width: 600px){
+    .form_content{
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .form-group{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+}

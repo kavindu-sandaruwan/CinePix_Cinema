@@ -24,5 +24,31 @@ and open the template in the editor.
 /*body*/
 body{
     background: #000025;
-    color: #fff;   
+    color: #fff;
+    padding-top: 150px;
 }
+
+.textbox{
+    width: 400px;
+    height: 30px;
+}
+
+h1{
+    padding-right: 360px;
+}
+
+.submitBTN{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+/*    margin-right: 395px;*/
+    background: #ffff00;
+    border-radius: 0.5rem;
+}
+
+.submitBTN:hover{
+    background: #ff9e1f;
+}
+
