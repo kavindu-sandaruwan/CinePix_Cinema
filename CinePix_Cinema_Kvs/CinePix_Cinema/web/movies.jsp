@@ -103,6 +103,13 @@
         
         
         <!--Available times-->
+<!--        <div class="timeSlot">
+            <a href="#" class="btn">10:15 AM</a>
+            <a href="#" class="btn2">02:15 PM</a>
+            <a href="#" class="btn3">06.15 PM</a>
+            <a href="#" class="btn4">08.15 PM</a>
+            <a href="#" class="btn5">10:00 PM</a>
+        </div>-->
         <div class="timeSlot">
             <a href="#" style="--clr:#1e9bff"><span>10:15 AM</span></a>
             <a href="#" style="--clr:#1e9bff"><span>02:15 PM</span></a>
