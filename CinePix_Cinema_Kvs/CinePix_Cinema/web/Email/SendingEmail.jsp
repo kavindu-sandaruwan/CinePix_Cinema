@@ -16,40 +16,56 @@
     
     </head>
     <body>
+   
         <div class="container">
-            <form action="#" method="POST">
-                
+            <form action="#" method="POST" class="form_content">
+                <table>
+                    
+<!--                      <h1>Check Out</h1>  // Name of the  form (Change Accordingly)
+                    <br><hr size="1" width="68%" color="#ffff00"> 
+                    <br>
+                 -->
                 <div class="mb-3">
-                    <lable for="exampleFormControlInput1" class="form-label">Movie Name</lable>
-                    <input type="text"  name="moviename" class="form-control"  id="exampleFormControlInput1" placeholder="Enter Movie Name">
+                    <tr>
+                        <td><lable for="exampleFormControlInput1" class="form-label">Movie Name</lable></td>
+                <td><br><input type="text"  name="moviename" class="form-control"  id="exampleFormControlInput1" placeholder="Enter Movie Name"></td>
+                    </tr>
                 </div>
                 
                 
                 
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" v id="exampleFormControlInput1" placeholder="Enter Email">
+                    <tr>
+                        <td><label for="exampleFormControlInput1" class="form-label">Email</label></td>
+                        <td><br><input type="email" name="email" class="form-control" v id="exampleFormControlInput1" placeholder="Enter Email"></td>
+                    </tr>
                 </div>
                 
                 
                 
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Date</label>
-                    <input type="date" name="date" class="form-control" id="exampleFormControlInput1" placeholder="Enter Date">
+                    <tr>
+                        <td><label for="exampleFormControlInput1" class="form-label">Date</label></td>
+                        <td><br><input type="date" name="date" class="form-control" id="exampleFormControlInput1" placeholder="Enter Date"></td>
+                    </tr>
                 </div>
                 
                 
                 
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <tr>
+                        <td><label for="exampleFormControlTextarea1" class="form-label">Message</label></td>
+                        <td><br><textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea></td>
+                </tr>
                 </div>
                 
-                
-                
-                <button type="submit" class="btn btn-success">Submit</button>
-            
+              
+                    <tr>
+                        <td colspan="2" align="center" align="center"><br><br><button type="submit" class="btn-success">Submit</button></td>
+                </tr>
+                </table>
             </form>
         </div>
+  
     </body>
 </html>
