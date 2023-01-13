@@ -9,9 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CinePix-Terms</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" type="text/css" href="Style.css">
         
         <style>
-            body {padding-left: 120px; padding-right: 120px; background-color: #000025; color: white;}
+            body {max-width: 968px; margin-left: auto; margin-right: auto; text-align: justify; justify-content: center; background-color: #000025; color: white;}
             p {font-family: sans-serif; line-height: 1.5;}
             p {font-size: 14px}
             h3 {font-family: sans-serif}
@@ -19,8 +22,27 @@
     </head>
     <body>
   
+        <header id="header">
+            <a href="#" class="logo">
+                <i class='bx bxs-movie-play'></i>CinePix<br>CINEMAS
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navigation">
+                <li><a href="index.jsp#home">HOME</a></li>
+                <li><a href="index.jsp#movies">MOVIES</a></li>
+                <li><a href="index.jsp#soon">UPCOMING</a></li>
+                <li><a href="index.jsp#news">NEWS</a></li>
+            </ul>
+            <a href="#" class="btn">BOOK NOW</a>
+        </header>
+        
+        <section>
+            
+        </section>
+        
         <h1 >Terms and Conditions</h1>
         <hr size="1" width="100%" color="#ffff00">
+        <br>
         
         <h3>1) Definitions</h3>
         <p>CinePix Cinema Private Limited, a business with a Sri Lankan company registration, is the owner and operator of www.CinePixcinemas.com. 
@@ -107,5 +129,53 @@
             Both parties, as well as any permitted successors, heirs, executors, administrators, personal representatives, and assigns, are bound by 
             and will benefit from these terms and conditions.
             Without www.CinePixcinemas.com's prior written authorization, you are not permitted to assign your rights or responsibilities under this agreement.</p><br><br>
+    
+        <section>
+            
+        </section>
+        
+    <!-- footer -->
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <ul class="footer-menu1">
+                            <li><a href="index.jsp#home">HOME</a></li>
+                            <li><a href="index.jsp#movies">MOVIES</a></li>
+                            <li><a href="index.jsp#soon">UPCOMING</a></li>
+                            <li><a href="index.jsp#news">NEWS</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul class="footer-menu1">
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="aboutus.jsp">ABOUT US</a></li>
+                            <li><a href="feedback.jsp">FEEDBACK</a></li>
+                            <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+            
+
+            <a href="#" class="logo">
+                <i class='bx bxs-movie-play'></i>CinePix<br>CINEMAS
+            </a>
+            <div class="social">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/?lang=en"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/en/"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+           
+        </section>
+        
+        <!-- copyrights -->
+        <div class="copyright">
+            <p>&#169; 2023 CinePix Cinemas All Right Reserved.</p>
+        </div>
+        
+        <script src="main.js"></script>
+        
     </body>
 </html>

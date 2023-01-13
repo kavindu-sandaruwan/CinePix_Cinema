@@ -9,29 +9,50 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+        <title style="i">CinePix-AboutUs</title>
+        <link rel="icon" type="image/x-icon" href="img/icon.png">
         <link rel="stylesheet" type="text/css" href="aboutus.css">
+        <!-- Boxicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
-    <center>
+        
+        <!--Navigation bar-->
+        <header id="header">
+            <a href="#" class="logo">
+                <i class='bx bxs-movie-play'></i>CinePix<br>CINEMAS
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navigation">
+                <li><a href="index.jsp">HOME</a></li>
+                <li><a href="index.jsp#movies">MOVIES</a></li>
+                <li><a href="index.jsp#soon">UPCOMING</a></li>
+                <li><a href="index.jsp#news">NEWS</a></li>
+            </ul>
+            <a href="#" class="btn">BOOK NOW</a>
+        </header>
+        
+        
+<!--    <center>-->
         <div class="section">
             <div class="container">
                 <div class="content-section">
-                    <div class="title">
-                        
-                        <h3>About Us</h3>
+                     <div class="content-1">
+                        <p class="text1">ABOUT US</p>
                     </div>
                     <div class="content">
-                        <p>By combining the charm of classic movie theaters with cutting-edge technology and comfort that adhere to worldwide standards,
-                            CinePix_Cinema is committed to elevating the bar in Sri Lanka's film experience.</p><br>
+                        <p>By combining the charm of classic movie theaters with cutting-edge technology and comfort that adhere to worldwide standards, CinePix_Cinema is committed to elevating the bar in Sri Lanka's film experience.</p><br>
                         </div>
                     </div>
                     
                 </div>
+            <center>
                 <div class="img">
                     <img src="AU_img.jpg">
                </div>
-            <br><hr size="1" width="60%" color="#ffff00">
+            <br><hr size="1" width="968px" color="#ffff00">
+            </center>
+            
             <div class="bottom">
                 <table>
                 <tr>
@@ -60,5 +81,47 @@
         </div>
     </center>
     
+        <!-- footer -->
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <ul class="footer-menu1">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#movies">MOVIES</a></li>
+                            <li><a href="#soon">UPCOMING</a></li>
+                            <li><a href="#news">NEWS</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul class="footer-menu1">
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">FEEDBACK</a></li>
+                            <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+            
+
+            <a href="#" class="logo">
+                <i class='bx bxs-movie-play'></i>CinePix<br>CINEMAS
+            </a>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+           
+        </section>
+        
+        <!-- copyrights -->
+        <div class="copyright">
+            <p>&#169; 2023 CinePix Cinemas All Right Reserved.</p>
+        </div> 
+    
+        <script src="main.js"></script>
     </body>
 </html>

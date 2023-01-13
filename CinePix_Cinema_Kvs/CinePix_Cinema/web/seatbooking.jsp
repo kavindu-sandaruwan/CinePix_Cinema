@@ -43,7 +43,7 @@
     <div class="seat"></div>
     <div class="seat"></div>
  
-    <div class="seat"></div>
+    <div class="seat" href="#"></div>
     <div class="seat"></div>
     <div class="seat"></div>
     <div class="seat"></div>

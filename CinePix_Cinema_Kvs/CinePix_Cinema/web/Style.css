@@ -288,6 +288,8 @@ header.shadow{
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #ffff00;
+    border-bottom: 1px solid #ffff00;
     
 }
 .footer .container{

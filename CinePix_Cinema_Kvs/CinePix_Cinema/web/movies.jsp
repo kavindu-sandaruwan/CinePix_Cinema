@@ -1,190 +1,206 @@
 <%-- 
-    Document   : movies
-    Created on : Jan 8, 2023, 3:49:35 PM
-    Author     : vinuri
+    Document   : Movie_My
+    Created on : Jan 9, 2023, 1:46:24 AM
+    Author     : Kavindu Sandaruwan
 --%>
+
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%
+    String id = request.getParameter("userid");
+    String Mid = request.getParameter("Mid");
+    String driver = "com.mysql.jdbc.Driver";
+    String connectionUrl = "jdbc:mysql://localhost:3306/";
+    String database = "cinepix";
+    String userid = "root";
+    String password = "";
+    
+    try {
+        Class.forName(driver);
+    
+    } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+    }
+    
+    Connection connection = null;
+    Statement statement = null;
+    ResultSet resultSet = null;
+%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Movie Details</title>
+        <title style="i">CinePix-Movies</title>
+        <link rel="icon" type="image/x-icon" href="img/icon.png">
         <link rel="stylesheet" type="text/css" href="moviestyle.css">
-        
+        <!-- swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
         <!-- Boxicon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        
         <!--Rating Star icon-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-        
     </head>
     <body>
-        
-        <!--Navigation Bar-->
+            
+              <!--Navigation bar-->
         <header id="header">
             <a href="#" class="logo">
                 <i class='bx bxs-movie-play'></i>CinePix<br>CINEMAS
             </a>
             <div class="bx bx-menu" id="menu-icon"></div>
             <ul class="navigation">
-                <li><a href="#home" class="home-active">HOME</a></li>
-                <li><a href="#movies">MOVIES</a></li>
-                <li><a href="#soon">UPCOMING</a></li>
-                <li><a href="#news">NEWS</a></li>
+                <li><a href="index.jsp">HOME</a></li>
+                <li><a href="index.jsp#movies" class="home-active">MOVIES</a></li>
+                <li><a href="index.jsp#soon">UPCOMING</a></li>
+                <li><a href="index.jsp#news">NEWS</a></li>
             </ul>
             <a href="#" class="btn">BOOK NOW</a>
         </header>
-        
-        
-        <div class="bg-1">
-            <img src="img/MVavatar.jpg">
-        </div>
-        
-        
-        <div class="p-1">
-            <div class="cinema">
-                NOW SHHOWING AT CinePix Cinema
+            
+            <!--movies--><%
+                try {
+                    connection = DriverManager.getConnection(connectionUrl + database, userid, password);
+                    statement=connection.createStatement();
+                    String sql ="select * from movies where id='"+Mid+"'";
+                    resultSet = statement.executeQuery(sql);
+                    
+                    while(resultSet.next()) {
+                        %>
+            <div class="movies container" id="movies">
+                <img src="<%=resultSet.getString("image") %>" alt="" class="cover">
+                <div class="movies-text">
+
+                    <div class="cinema">NOW SHOWING AT CINEPIX CINEMAS</div>
+                    
+                    <span><br><%=resultSet.getString("studio") %></span>
+                    <h1 class="movies-title"><%=resultSet.getString("name") %></h1>
+                    <div class="duration"><h2><%=resultSet.getString("duration") %></h2></div>
+                    <div class="rating">
+                        <span>Imdb Rating</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="count"><%=resultSet.getString("rating") %></span>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+                    
+            
+        <section class="time-slots">
+             <div class="content-1">
+                <p class="text1">SELECT A DATE</p>
+            </div>
+            <div class="date-clz">
+                <table class="date">
+                    <tr>
+                        <td>
+                            <button id='btn-td' class="button">Today</button>
+                        </td>
+                        <td>
+                            <button id='btn1' class="button">Jan 13 Fri</button>
+                        </td>
+                        <td>
+                            <button id='btn2' class="button">Jan 14 Sat</button>
+                        </td>
+                        <td>
+                            <button id='btn3' class="button">Jan 15 Sun</button>
+                        </td>
+                        <td>
+                            <button id='btn4' class="button">Jan 16 Mon</button>
+                        </td>
+                        <td>
+                            <button id='btn5' class="button">Jan 17 Tue</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content-1">
+                <p class="text1">SELECT A TIME</p>
+            </div>
+            <div class="time-clz">
+                <table class="time">
+                    <tr>
+                        <td>
+                            <button id='btn-time1' class="button">10.00 AM</button>
+                        </td>
+                        <td>
+                            <button id='btn-time2' class="button">12.15 PM</button>
+                        </td>
+                        <td>
+                            <button id='btn-time3' class="button">2.15 PM</button>
+                        </td>
+                        <td>
+                            <button id='btn-time4' class="button">4.15 PM</button>
+                        </td>
+                        <td>
+                            <button id='btn-time5' class="button">6.15 PM</button>
+                        </td>
+                        <td>
+                            <button id='btn-time6' class="button">8.15 PM</button>
+                        </td>
+                        <td>
+                            <button id='btn-time6' class="button">10.15 PM</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
             
-            
-            <!--Movie Name-->
-            <h1>
-                <span>AVATAR</span>:<span> THE </span>
-                <span>WAY OF </span>
-                <span>WATER</span>
-            </h1>
-            
-            <!--Duration & Rating-->
-            <div class="duration">
-                <h2>3 HR 12 MIN</h2>
+        </section>
+            <section>
+            <div class="content-1">
+                <p class="text1">STORYLINE</p>
             </div>
-            
-            <!--Rating-->
-            <div class="rating">
-                <span>CinePix Rating</span>
-                <span class="fa fa-star checked"></span>
-                <span class="count">8/10</span>
-            </div>
-        </div>
-        
-        
-        <div class="content-1">
-            <h1 class="text1">SHOWING AT</h1>
-        </div>
-        
-        
-        <!--Horizontal Line 1-->
-        <div class="line1">
-            <hr size="1.5" width="1200px" color="yellow">
-        </div>
-        
-        
-        <div class="dates">
-            <form action="#" method="POST">
-                <select class="dropbtn" id="dropbtn">
-                    <option value="2023-01-07">Sat, 07 Jan </option>
-                    <option value="2023-01-08">Sun, 08 Jan </option>
-                    <option value="2023-01-09">Mon, 09 Jan </option>
-                    <option value="2023-01-10">Tue, 10 Jan </option>
-                    <option value="2023-01-11">Wed, 11 Jan </option>
-                    <option value="2023-01-12">Thu, 12 Jan </option>
-                    <option value="2023-01-13">Fri, 13 Jan </option>
-                    <option value="2023-01-14">Sat, 14 Jan </option>
-                    <option value="2023-01-15">Sun, 15 Jan </option>
-                    <option value="2023-01-16">Mon, 16 Jan </option>
-                    <option value="2023-01-17">Tue, 17 Jan </option>
-                    <option value="2023-01-17">Tue, 17 Jan </option>
-                    <option value="2023-01-19">Thu, 19 Jan </option>
-                </select>
-            </form>
-        </div>
-        
-        
-        <!--Available times-->
-<!--        <div class="timeSlot">
-            <a href="#" class="btn">10:15 AM</a>
-            <a href="#" class="btn2">02:15 PM</a>
-            <a href="#" class="btn3">06.15 PM</a>
-            <a href="#" class="btn4">08.15 PM</a>
-            <a href="#" class="btn5">10:00 PM</a>
-        </div>-->
-        <div class="timeSlot">
-            <a href="#" style="--clr:#1e9bff"><span>10:15 AM</span></a>
-            <a href="#" style="--clr:#1e9bff"><span>02:15 PM</span></a>
-            <a href="#" style="--clr:#1e9bff"><span>06.15 PM</span></a>
-            <a href="#" style="--clr:#1e9bff"><span>08.15 PM</span></a>
-            <a href="#" style="--clr:#1e9bff"><span>10:00 PM</span></a>
-        </div>
-        
-        
-        
-        
-        <!--Horizontal Line 2-->
-        <div class="line2">
-            <hr size="1.5" width="1200px" color="yellow">
-        </div>
-        
-        
-        
-        <!--Table 1-->
-        <table class="table1">
-            <tr>
-                <td>
-                    <div class="storyLine">
-                        <div class="head">
-                            STORY LINE 
-                        </div>
+            <div class="content-2">
                         <p>
-                            Avatar: The Way of Water focuses on Pandora's natives and their costumes,
-                            or the simply magnificent fauna and flora of the alien moon, which glows the brightest.
-                            There is a great deal to discover in Pandora,
-                            but Cameron appears to be reluctant to tell a tale without a relatable human character.
-                            That's probably why Spider (Jake Champion),
-                            a human kid who did grow up in Pandora and learn the Na'vi ways,
-                            is one of the primary characters of Avatar: The Way of Water.
-                            Because he ignores people and enjoys nature, there is plenty to appreciate about Spider. 
-                            Even so, at times his inclusion seems to have been added after the fact as a 
-                            method to ground the Avatar franchise's wacky narrative in relatable human interactions.
+                            <%=resultSet.getString("storyLine") %>
                         </p>
                     </div>
-                </td>
-            </tr>
-        </table>
-        
-        
-        <!--Table 4-->
-        <table class="table2">
-            <tr>
-                <td>
+
+            <div class="content-1">
+                <p class="text1">TRAILER</p>
+            </div>
                     <div class="offical-trailer">
-                        <div class="play">
-                            <iframe width="550" height="350" src="https://www.youtube.com/embed/d9MyW72ELq0"></iframe>
+                        <div class="trailer">
+                            <iframe width="100%" height="100%" allowfullscreen=true src="<%=resultSet.getString("trailer") %>"></iframe>
                         </div>
                     </div>
-                </td>
-            </tr>
-        </table>
-        
-        
-        
-         <!--footer--> 
+        </section>
+                    
+                    <%
+                            
+                    } connection.close();
+                } catch (Exception e) {
+                     e.printStackTrace();
+                }
+            %>
+                    
+            <section>
+                
+            </section>
+            
+            <!-- footer -->
+        <footer>
         <section class="footer">
             <div class="footer-container">
                 <div class="footer-row">
                     <div class="footer-col">
                         <ul class="footer-menu1">
-                            <li><a href="#home">HOME</a></li>
-                            <li><a href="#movies">MOVIES</a></li>
-                            <li><a href="#soon">UPCOMING</a></li>
-                            <li><a href="#news">NEWS</a></li>
+                            <li><a href="index.jsp">HOME</a></li>
+                            <li><a href="index.jsp#movies">MOVIES</a></li>
+                            <li><a href="index.jsp#soon">UPCOMING</a></li>
+                            <li><a href="index.jsp#news">NEWS</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <ul class="footer-menu1">
                             <li><a href="#">CONTACT US</a></li>
-                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="aboutus.jsp">ABOUT US</a></li>
                             <li><a href="#">FEEDBACK</a></li>
                             <li><a href="#">TERMS AND CONDITIONS</a></li>
                         </ul>
@@ -202,12 +218,16 @@
                 <a href="#"><i class='bx bxl-instagram' ></i></a>
                 <a href="#"><i class='bx bxl-tiktok' ></i></a>
             </div>
-            </div>
+           
         </section>
         
-         copyrights 
+        <!-- copyrights -->
         <div class="copyright">
             <p>&#169; 2023 CinePix Cinemas All Right Reserved.</p>
         </div>
+        </footer>
+            <script src="Movie_my.js"></script>
+            
+             
     </body>
 </html>

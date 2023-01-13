@@ -1,7 +1,7 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+
+/* 
+    Created on : Jan 9, 2023, 1:47:59 AM
+    Author     : Kavindu Sandaruwan
 */
 /* 
     Created on : Jan 8, 2023, 3:54:19 PM
@@ -21,6 +21,13 @@ and open the template in the editor.
       
 }
 
+/*variables
+:root{
+    --main-color: #000025;
+    --text-color: #020307;
+    --bg-color: #fff;
+}*/
+
 /*custom scroll bar*/
 html::-webkit-scrollbar{
     width: 0.5rem;
@@ -34,6 +41,7 @@ html::-webkit-scrollbar-thumb:hover{
     background: #ff9e1f;
 }
 
+/*body*/
 body{
     background: #000025;
     color: #fff;
@@ -42,6 +50,9 @@ body{
 section{
     padding: 4.5rem 0 1.5rem;
 }
+
+
+/*Navigation*/
 header{
     position: fixed;
     width: 100%;
@@ -66,10 +77,10 @@ header.shadow{
     align-items: center;
     column-gap: 0.5rem;
 }
-/*.logo .bx{
+.logo .bx{
     font-size: 24px;
-    color: #000025;
-}*/
+    color: #ffffff;
+}
 .bx .bxs-movie-play{
     color: #ffff00;
     font-size: 40px;
@@ -120,28 +131,33 @@ header.shadow{
 }
 
 
-
-
-
-/*image*/
-.bg-1 img{
+/*Page details*/
+.movies{
+    position: relative;
+    min-height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0rem !important;
+    border-radius: 0.5rem;
+}
+.cover{
     position: absolute;
     width: 100%;
     height: 100%;
-    /*z-index: -1;*/
-    filter: brightness(80%);
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    filter: brightness(50%);
 }
-
-
-/*image content*/
-.p-1{
-    position: absolute;
-    height: 250px;
-    width: 550px;
-    top: 400px;
-    right: 800px;
+.movies-text{
+    padding: 0 150px;
 }
-
+.movies-title{
+    font-size: 4rem;
+    font-weight: 700;
+}
 .cinema{
     background-color: #3939b8;
     color: #fff;
@@ -153,67 +169,17 @@ header.shadow{
     text-transform: uppercase;
     word-spacing: 7.5px;
 }
-
-
-.p-1 h1 span{
-    letter-spacing: 7px;
-    cursor: pointer;
-    line-height: 50px;
-    color: white;
-    font-size: 50px;
-}
-
-
-/*Movie Name Text animation*/
-h1 span {
-  transition: 0.5s ease-out;
-}
-h1:hover span:nth-child(1) {
-  margin-right: 5px;
-}
-/* h1:hover span:nth-child(1):after {
-  content: "";
-} */
-h1:hover span:nth-child(3) {
-  margin-left: 20px;
-}
-h1:hover span {
-  color: #fff;
-  text-shadow: 0 0 10px #3D85C6, 0 0 20px #3D85C6, 0 0 40px #3D85C6;
-}
-
-
-/*Duration*/
-.duration h2{
-    line-height: 50px;
-    color: white;
-    word-spacing: 5px;
-    /*color: hsl(0, 0%, 28%);*/
-    font-size: 30px;
-    cursor: pointer;
+.movies-text span{
+    color: #fff;
+    font-weight: 500;
     text-transform: uppercase;
-    
-    padding: 0px;
-    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 4.5s infinite linear;
 }
-
-@keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  60% {
-    background-position: 600px;
-  }
-  100% {
-    background-position: 600px;
-  }
+.movies-title{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
-
-
-/*Rating*/
 .rating{
     line-height: 50px;
     font-family: "Jockey One";  
@@ -238,145 +204,102 @@ h1:hover span {
     color: white;
     font-size: 20px;
 }
-
-
-/*Content-1 Text 1*/
-.content-1 .text1{
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    top: 780px;
-    right: 1150px;
-    word-spacing: 7px;
+.content-1{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffff00;
+}
+.text1{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.content-2 p{
+    max-width: 968px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.offical-trailer .trailer{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height: 550px;
+/*    width: 968px;*/
 }
 
-
-/*Horizontal Line 1*/
-.line1{
-    margin: 20px;
-    padding: 50px;
-    position: absolute;
-    top: 800px;
-    right: 100px;
-}
-
-.dates .dropbtn{
-    position: absolute;
-    top: 780px;
-    right: 800px;
-    width: 200px;
-    height: 50px;
-}
-
-
-
-/*Time Slot*/
-.timeSlot{
-    position: relative;
-    background: white;
-    width: 700px;
-    color: black;
-    text-decoration: none;
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    transition: 0.5s;
+/*Time-slots*/
+.date ,.time{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    display: flex;
     flex-direction: row;
-    right: -200px;
-    top: 910px;
+    
 }
 
-.timeSlot a:hover{
-    background: var(--clr);
-    letter-spacing: 0.25em;
-    box-shadow: 0 0 35px var(--clr);
+.date-clz{
+    margin-top: 2rem !important;
+    margin-bottom: 3rem !important;
 }
-
-a:before{
-    content: '';
-    position: absolute;
-    inset: 5px;
+.time-clz{
+    margin-top: 2rem !important;
 }
-
-
-a span{
-    position: relative;
-    z-index: 1;
-}
-
-
-/*Horizontal Line 2*/
-.line2{
-    margin: 20px;
-    padding: 50px;
-    position: absolute;
-    top: 910px;
-    right: 100px;
-}
-
-
-
-/*Table 1*/
-.table1{
-    position: absolute;
-    top: 880px;
-    width: 620px;
-    height: 350px;
-    right: 750px;
-    top: 1100px;
-    text-align: justify;
-}
-
-
-.table1 .storyLine .head{
+.date .button,.time .button{
+    justify-content: space-between;
+    font-size: 1.2rem;
     font-weight: 300;
-    font-size: 25px;
-    letter-spacing: 10px;
-    word-spacing: 5px;
-    line-height: 50px;
-    position: absolute;
-    top: -50px;
-    right: 300px;
+    color: #000025;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
 }
 
-.table1 .storyLine p{
-    text-align: justify;
-    line-height: 30px;
-    position: absolute;
-    top: 40px;
+.button:hover{
+    color: black;
+    background: #ffff00;
 }
-
-
-
-/*Table 2 - Official Trailer*/
-.table2{
-    position: absolute;
-    top: 1080px;
-    right: 170px;
+.button:disabled{
+    color: black;
+    background: #999999;
 }
 
 
-
-
-/*FOOTER*/  
+/*FOOTER  */
 .footer{
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #ffff00;
+    border-bottom: 1px solid #ffff00;
+    
 }
 .footer .container{
     max-width: 968px;
     margin: auto;
+    
 }
 .footer-row{
-    display: flex;
+    display : flex;
     flex-wrap: wrap;
 }
 .footer-menu1 ul{
     list-style: none;
+    padding: 0;
+    list-style: none;
     
+    
+}
+.footer ul li{
+    display: block;
 }
 .footer-col{
     width: 50%;
@@ -394,6 +317,7 @@ a span{
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
+    
 }
 .footer-col ul li a:hover{
     color: #fff;
@@ -424,9 +348,6 @@ a span{
     font-size: 15px;
 }
 
-
-
-
 /*responsive*/
 @media(max-width: 1080px){
     .home-text{
@@ -440,11 +361,15 @@ a span{
     section{
         padding: 50px 4%;
     }
-    .home-text{
+    .movies-text{
         padding: 0 4%;
     }
-    .home-text h1{
+    .movies-title h1{
         font-size: 3rem;
+    }
+    .cover{
+        width: 100%;
+        height: 100%;
     }
 }
 @media(max-width: 795px){
@@ -488,24 +413,27 @@ a span{
     .navigation.active{
         top: 100%;
     }
-    .home-text h1{
+    .movies-text h1{
         font-size: 2.4rem;
     }
     .btn{
         padding: 0.6rem 1.2rem;
     }
-    .movies-container{
-        grid-template-columns: repeat(auto-fit, minmax(160px,auto))
+    .trailer{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
     }
     .footer-col{
-        width: 50%;
-        margin-bottom: 30px;
+        width: 100%;
     }
 }
 @media(max-width: 472px){
-    .news form .email{
-        width: auto;
-    }
     .footer{
         flex-direction: column;
         align-items: center;
@@ -519,7 +447,7 @@ a span{
     header{
         padding: 6px 4%;
     }
-    .home-text h1{
+    .movies-text h1{
         font-size: 1.7rem;
     }
     .play{
@@ -534,5 +462,12 @@ a span{
     }
     .box .box-img{
         height: 240px;
+    }
+    .trailer{
+        width: 100%;
+        height: 100%;
+    }
+    .date .button,.time .button{
+        font-size: 1.0rem;
     }
 }
