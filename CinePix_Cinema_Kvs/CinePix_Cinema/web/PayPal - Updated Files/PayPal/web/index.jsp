@@ -1,6 +1,6 @@
 <%-- 
-    Document   : checkout
-    Created on : Jan 12, 2023, 7:58:01 PM
+    Document   : index
+    Created on : Jan 13, 2023, 1:22:43 AM
     Author     : vinuri
 --%>
 
@@ -28,7 +28,7 @@
             <br>
             
             <!--FORM 1-->
-            <form action="#" method="POST" id="form1">
+            <form action="authorize_payment" method="post" id="form1">
                 <table class="table1">
                    
                     <tr>

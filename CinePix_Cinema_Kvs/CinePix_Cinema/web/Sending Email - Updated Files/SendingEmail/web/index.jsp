@@ -1,8 +1,4 @@
-<%-- 
-    Document   : SendingEmail
-    Created on : Jan 12, 2023, 8:00:59 PM
-    Author     : vinuri
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,14 +7,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Send Mail Page</title>
         
-        <link rel="stylesheet" type="text/css" href="SendingEmailCSS.css">
+        <link rel="stylesheet" type="text/css" href="indexCSS.css">
        
     
     </head>
     <body>
    
         <div class="container">
-            <form action="#" method="POST" class="form_content">
+            <form action="email" method="POST" class="form_content">
                 <table>
                     
 <!--                      <h1>Check Out</h1>  // Name of the  form (Change Accordingly)
