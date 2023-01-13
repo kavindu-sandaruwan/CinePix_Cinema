@@ -4,7 +4,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Jan 11, 2023, 1:55:43 PM
+    Created on : Jan 12, 2023, 7:58:39 PM
     Author     : vinuri
 */
 
@@ -38,11 +38,11 @@ h1{
 }
 
 .submitBTN{
-    width: 150px;
-    height: 40px;
+    width: 170px;
+    height: 50px;
     font-size: 15px;
     font-weight: bold;
-    letter-spacing: 1.1px;
+    letter-spacing: 4px;
 /*    margin-right: 395px;*/
     background: #ffff00;
     border-radius: 0.5rem;

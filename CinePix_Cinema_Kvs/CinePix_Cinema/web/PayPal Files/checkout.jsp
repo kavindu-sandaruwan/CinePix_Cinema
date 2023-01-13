@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Jan 11, 2023, 1:39:27 PM
+    Document   : checkout
+    Created on : Jan 12, 2023, 7:58:01 PM
     Author     : vinuri
 --%>
 
@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Check Out</title>
-        <link rel="stylesheet" type="text/css" href="indexCSS.css">
+        <link rel="stylesheet" type="text/css" href="checkoutCSS.css">
         
         
         <meta charset="UTF-8">
