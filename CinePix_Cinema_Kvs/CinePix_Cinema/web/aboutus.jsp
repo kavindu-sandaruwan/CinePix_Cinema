@@ -87,18 +87,18 @@
                 <div class="footer-row">
                     <div class="footer-col">
                         <ul class="footer-menu1">
-                            <li><a href="#home">HOME</a></li>
-                            <li><a href="#movies">MOVIES</a></li>
-                            <li><a href="#soon">UPCOMING</a></li>
-                            <li><a href="#news">NEWS</a></li>
+                            <li><a href="index.jsp#home">HOME</a></li>
+                            <li><a href="index.jsp#movies">MOVIES</a></li>
+                            <li><a href="index.jsp#soon">UPCOMING</a></li>
+                            <li><a href="index.jsp#news">NEWS</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <ul class="footer-menu1">
                             <li><a href="#">CONTACT US</a></li>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">FEEDBACK</a></li>
-                            <li><a href="#">TERMS AND CONDITIONS</a></li>
+                            <li><a href="aboutus.jsp">ABOUT US</a></li>
+                            <li><a href="feedback.jsp">FEEDBACK</a></li>
+                            <li><a href="terms_condition.jsp">TERMS AND CONDITIONS</a></li>
                         </ul>
                     </div>
             </div>

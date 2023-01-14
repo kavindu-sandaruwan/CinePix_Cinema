@@ -282,7 +282,7 @@
                             <li><a href="#">CONTACT US</a></li>
                             <li><a href="aboutus.jsp">ABOUT US</a></li>
                             <li><a href="feedback.jsp">FEEDBACK</a></li>
-                            <li><a href="#">TERMS AND CONDITIONS</a></li>
+                            <li><a href="terms_condition.jsp">TERMS AND CONDITIONS</a></li>
                         </ul>
                     </div>
             </div>

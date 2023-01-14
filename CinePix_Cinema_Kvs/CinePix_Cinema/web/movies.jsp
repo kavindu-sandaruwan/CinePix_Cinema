@@ -62,7 +62,8 @@
             <a href="#" class="btn">BOOK NOW</a>
         </header>
             
-            <!--movies--><%
+            <!--movies-->
+            <%
                 try {
                     connection = DriverManager.getConnection(connectionUrl + database, userid, password);
                     statement=connection.createStatement();
@@ -91,7 +92,6 @@
                 </div>
             </div>
                     
-            
         <section class="time-slots">
              <div class="content-1">
                 <p class="text1">SELECT A DATE</p>
@@ -100,22 +100,22 @@
                 <table class="date">
                     <tr>
                         <td>
-                            <button id='btn-td' class="button">Today</button>
+                            <button id='btn1' class="button">Today</button>
                         </td>
                         <td>
-                            <button id='btn1' class="button">Jan 13 Fri</button>
+                            <button id='btn2' class="button">Jan 13 Fri</button>
                         </td>
                         <td>
-                            <button id='btn2' class="button">Jan 14 Sat</button>
+                            <button id='btn3' class="button">Jan 14 Sat</button>
                         </td>
                         <td>
-                            <button id='btn3' class="button">Jan 15 Sun</button>
+                            <button id='btn4' class="button">Jan 15 Sun</button>
                         </td>
                         <td>
-                            <button id='btn4' class="button">Jan 16 Mon</button>
+                            <button id='btn5' class="button">Jan 16 Mon</button>
                         </td>
                         <td>
-                            <button id='btn5' class="button">Jan 17 Tue</button>
+                            <button id='btn6' class="button">Jan 17 Tue</button>
                         </td>
                     </tr>
                 </table>
@@ -133,25 +133,28 @@
                             <button id='btn-time2' class="button">12.15 PM</button>
                         </td>
                         <td>
-                            <button id='btn-time3' class="button">2.15 PM</button>
+                            <button id='btn-time3' class="button">2.30 PM</button>
                         </td>
                         <td>
-                            <button id='btn-time4' class="button">4.15 PM</button>
+                            <button id='btn-time4' class="button">4.45 PM</button>
                         </td>
                         <td>
-                            <button id='btn-time5' class="button">6.15 PM</button>
+                            <button id='btn-time5' class="button">7.00 PM</button>
                         </td>
                         <td>
-                            <button id='btn-time6' class="button">8.15 PM</button>
+                            <button id='btn-time6' class="button" disabled>9.15 PM</button>
                         </td>
                         <td>
-                            <button id='btn-time6' class="button">10.15 PM</button>
+                            <button id='btn-time6' class="button">11.30 PM</button>
                         </td>
                     </tr>
                 </table>
             </div>
             
         </section>
+        
+        
+            
             <section>
             <div class="content-1">
                 <p class="text1">STORYLINE</p>
@@ -171,14 +174,15 @@
                         </div>
                     </div>
         </section>
-                    
-                    <%
+                         <%
                             
                     } connection.close();
                 } catch (Exception e) {
                      e.printStackTrace();
                 }
             %>
+                    
+                    
                     
             <section>
                 
@@ -201,8 +205,8 @@
                         <ul class="footer-menu1">
                             <li><a href="#">CONTACT US</a></li>
                             <li><a href="aboutus.jsp">ABOUT US</a></li>
-                            <li><a href="#">FEEDBACK</a></li>
-                            <li><a href="#">TERMS AND CONDITIONS</a></li>
+                            <li><a href="feedback.jsp">FEEDBACK</a></li>
+                            <li><a href="terms_condition.jsp">TERMS AND CONDITIONS</a></li>
                         </ul>
                     </div>
             </div>
