@@ -151,6 +151,13 @@
            
         </section>
         
+        <!--Contact-->
+        <div class="contact">
+            <p>Email : cinepixcinema5@gmail.com</p>
+            <p>contact no : +941123456789</p>
+
+        </div>
+        
         <!-- copyrights -->
         <div class="copyright">
             <p>&#169; 2023 CinePix Cinemas All Right Reserved.</p>
