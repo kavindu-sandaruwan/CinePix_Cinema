@@ -26,12 +26,12 @@
         
         <br/><br/>
 
-        <form action="SendEmail" method="POST">
+        <form action="SendEmail">
             <table border="0" width="35%" align="center">
                 <caption><h2 class="Lgtitle">Feedback</h2></caption>
                 <tr>
-                    <td width="50%" class="cususer">To:</td>
-                    <td ><input type="text" name="to" size="50" class="txtMailer" value="cinepixcinema5@gmail.com" readonly/></td>
+                    <td width="50%" class="cususer">Sender mail:</td>
+                    <td ><input type="text" name="to" size="50" class="txtMailer" value="vinuridisara2020@gmail.com" readonly/></td>
 
                 </tr>
                 <tr>
