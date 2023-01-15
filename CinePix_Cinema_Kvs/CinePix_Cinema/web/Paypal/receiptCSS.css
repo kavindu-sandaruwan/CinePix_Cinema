@@ -1,1 +1,16 @@
+body{
+    background-color: #000025;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding-top: 100px;
+}
+img{
+    width: 60px;
+    height: 60px;
+}
 
+fieldset{
+    width: 550px;
+}

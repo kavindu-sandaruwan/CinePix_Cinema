@@ -16,6 +16,7 @@
             table td { padding: 5px; }
         </style>
         
+        <link rel="stylesheet" type="text/css" href="reviewCSS.css">
     </head>
     
     <body>
@@ -36,8 +37,8 @@
                     </tr>
                     
                     <tr>
-                        <td colspan="2" align="center">
-                            <input type="submit" value="Pay Now" />
+                        <td colspan="2" align="center"> <br>
+                            <input type="submit" value="Pay Now" class="btn"/>
                         </td>
                     </tr>
                 </table>

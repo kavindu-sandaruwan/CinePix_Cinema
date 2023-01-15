@@ -1,1 +1,24 @@
+body{
+    background-color: #000025;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding-top: 230px;
+}
 
+.btn{
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    background: #ffff00;
+    border-radius: 0.5rem;
+    color: black;
+    border: 0;
+}
+
+.btn:hover{
+    background: #ff9e1f;
+}

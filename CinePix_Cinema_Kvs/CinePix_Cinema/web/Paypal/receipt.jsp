@@ -21,11 +21,13 @@
     
     <body>
         <div align="center">
-            
+            <fieldset>
             <h1>Payment Done. Thank you for booking</h1>
             <br>
             
-            <h2>Receipt Details:</h2>
+            <img src="right.png">
+            
+            <h2><br>Receipt Details:</h2>
             
             <table>
                 
@@ -70,6 +72,7 @@
                     <td>${transaction.amount.total} USD</td>
                 </tr>
             </table>
+            </fieldset>
         </div>
     </body>
 </html>

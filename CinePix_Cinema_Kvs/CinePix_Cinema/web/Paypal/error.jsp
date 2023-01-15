@@ -11,14 +11,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Payment Error</title>
         
-        <link rel="stylesheet" type="text/css" href="errorCSS.css">
+    <link rel="stylesheet" type="text/css" href="errorCSS.css">
     </head>
     
     <body>
+    <center>
         <h1>Payment Error</h1>
         <br/>
         
+        <img src="close.png">
+        
         <h3>${errorMessage}</h3>
         <br/>
+    </center>
     </body>
 </html>
