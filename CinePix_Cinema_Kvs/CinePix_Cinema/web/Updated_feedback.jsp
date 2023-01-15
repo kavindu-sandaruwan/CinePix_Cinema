@@ -28,10 +28,12 @@
 
         <form action="SendEmail" method="POST">
             <table border="0" width="35%" align="center">
-                <caption><h2 class="Lgtitle">Feedback</h2></caption>
+                <caption><h2 class="Lgtitle">Drop us a Feedback</h2>
+                <hr size="1" width="100%" color="#ffff00"></caption>
+                
                 <tr>
-                    <td width="50%" class="cususer">To:</td>
-                    <td ><input type="text" name="to" size="50" class="txtMailer" value="cinepixcinema5@gmail.com" readonly/></td>
+                    <td width="50%" class="cususer"><br>To:</td>
+                    <td ><br><input type="text" name="to" size="50" class="txtMailer" value="cinepixcinema5@gmail.com" readonly/></td>
 
                 </tr>
                 <tr>
@@ -39,8 +41,8 @@
                 </tr>
 
                 <tr>
-                    <td class="cususer">Subject:</td>
-                    <td><input type="text" name="subject" size="50" class="txtMailer"/></td>
+                    <td class="cususer"><br>Subject:</td>
+                    <td><br><input type="text" name="subject" size="50" class="txtMailer"/></td>
                 </tr>
 
                 <tr>
@@ -48,13 +50,13 @@
                 </tr>
 
                 <tr>
-                    <td class="cususer">Message:</td>
-                    <td><textarea rows="10" cols="39" name="msg" class="txtMailMessage"></textarea></td>
+                    <td class="cususer"><br>Message:</td>
+                    <td><br><textarea rows="10" cols="47" name="msg" class="txtMailMessage"></textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center"><center>
+                    <td colspan="2" align="center"><br><br>
                     <input type="submit" value="Send" class="Regi"/>
-                    <input type="reset" value="Delete" class="rst"></input></center></td>
+                    <input type="reset" value="Delete" class="rst"></input></td>
                 </tr>
             </table>
 
