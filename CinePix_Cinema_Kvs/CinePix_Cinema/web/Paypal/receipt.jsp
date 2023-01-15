@@ -11,6 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Payment Receipt</title>
         
+        <link rel="stylesheet" type="text/css" href="receiptCSS.css">
+        
         <style type="text/css">
             table { border: 0; }
             table td { padding: 5px; }
