@@ -23,12 +23,13 @@ public class SendEmail extends HttpServlet {
 
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-
+        
+        String from = request.getParameter("from");
         String to = request.getParameter("to");
         String subject = request.getParameter("subject");
         String msg = request.getParameter("msg");
 
-        Mailer.send(to, subject, msg);
+        Mailer.send(from,to, subject, msg);
         //out.print("message has been sent successfully");
         String location = "http://localhost:8080/CinePix_Cinema/message.jsp";
         response.sendRedirect(location);

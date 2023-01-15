@@ -19,7 +19,7 @@ import javax.mail.internet.MimeMessage;
  * @author vinuri
  */
 public class Mailer {
-    public static void send(String to,String subject,String msg){
+    public static void send(String from,String to,String subject,String msg){
         
         
         final String user="cinepixcinema5@gmail.com";//change accordingly
