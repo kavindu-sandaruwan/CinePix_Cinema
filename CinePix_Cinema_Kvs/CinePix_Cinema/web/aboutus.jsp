@@ -48,7 +48,7 @@
                 </div>
             <center>
                 <div class="img">
-                    <img src="AU_img.jpg">
+                    <img src="img/AU_img.jpg">
                </div>
             <br><hr size="1" width="968px" color="#ffff00">
             </center>
