@@ -289,7 +289,7 @@ header.shadow{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #ffff00;
-    border-bottom: 1px solid #ffff00;
+    
     
 }
 .footer .container{
@@ -351,7 +351,24 @@ header.shadow{
     color: #fff;
     transition: 0.2s all linear;
 }
+.contact{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: #bbbbbb;
+    font-size: 15px;
+    display: block;
+}
+.contact p{
+    text-align: center;
+}
+
 .copyright{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid #ffff00;
     padding: 20px;
     text-align: center;
     color: #bbbbbb;
