@@ -1,6 +1,6 @@
 <%-- 
-    Document   : feedback
-    Created on : Jan 15, 2023, 2:31:30 PM
+    Document   : message
+    Created on : Jan 15, 2023, 3:33:37 PM
     Author     : vinuri
 --%>
 
@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Success message</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Your Feedback send Successfully</h1>
     </body>
 </html>

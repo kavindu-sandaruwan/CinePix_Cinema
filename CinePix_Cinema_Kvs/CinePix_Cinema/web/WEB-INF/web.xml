@@ -4,17 +4,9 @@
         <servlet-name>SendEmail</servlet-name>
         <servlet-class>SendEmail</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>Email</servlet-name>
-        <servlet-class>SendMail.Email</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>SendEmail</servlet-name>
         <url-pattern>/SendEmail</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Email</servlet-name>
-        <url-pattern>/Email</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
