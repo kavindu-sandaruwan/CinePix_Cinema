@@ -32,7 +32,7 @@
             </a>
             <div class="bx bx-menu" id="menu-icon"></div>
             <ul class="navigation">
-                <li><a href="index.jsp#home" class="home-active">HOME</a></li>
+                <li><a href="index.jsp#home">HOME</a></li>
                 <li><a href="index.jsp#movies">MOVIES</a></li>
                 <li><a href="index.jsp#soon">UPCOMING</a></li>
                 <li><a href="index.jsp#news" class="home-active">NEWS</a></li>
@@ -144,10 +144,10 @@
                 <div class="footer-row">
                     <div class="footer-col">
                         <ul class="footer-menu1">
-                            <li><a href="#home">HOME</a></li>
-                            <li><a href="#movies">MOVIES</a></li>
-                            <li><a href="#soon">UPCOMING</a></li>
-                            <li><a href="#news">NEWS</a></li>
+                            <li><a href="index.jsp#home">HOME</a></li>
+                            <li><a href="index.jsp#movies">MOVIES</a></li>
+                            <li><a href="index.jsp#soon">UPCOMING</a></li>
+                            <li><a href="newspage.jsp#news">NEWS</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
