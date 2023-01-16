@@ -79,19 +79,22 @@
             <div class="movies-text">
 
                 <div class="cinema">NOW SHOWING AT CINEPIX CINEMAS</div>
-
-                <span><br><%=resultSet.getString("studio")%></span>
-                <h1 class="movies-title"><%=resultSet.getString("name")%></h1>
-                <div class="duration"><h2><%=resultSet.getString("duration")%></h2></div>
-                <div class="rating">
-                    <span>Imdb Rating</span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="count"><%=resultSet.getString("rating")%></span>
-                </div>
-                <div class="buy">
-                    <button class="btn" value="<%=resultSet.getString("id")%>">BUY TICKETS</button>
-                </div>
-
+                
+                
+                <form method="POST" action="buyticket.jsp">
+                    <span><br><%=resultSet.getString("studio")%></span>
+                    <h1 class="movies-title" ><%=resultSet.getString("name")%></h1>
+                    <div class="duration"><h2><%=resultSet.getString("duration")%></h2></div>
+                    <div class="rating">
+                        <span>Imdb Rating</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="count"><%=resultSet.getString("rating")%></span>
+                        <input type="text" name="title" value="<%=resultSet.getString("name")%>" hidden />
+                    </div>
+                    <div class="buy">
+                        <button type="submit" class="btn" name="buyticket" value="<%=resultSet.getString("id")%>">BUY TICKETS</button>
+                    </div>
+                </form>
 
             </div>
         </div>
