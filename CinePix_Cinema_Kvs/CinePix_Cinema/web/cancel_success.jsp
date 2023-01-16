@@ -59,7 +59,7 @@
                 <li><a href="index.jsp#soon">UPCOMING</a></li>
                 <li><a href="index.jsp#news">NEWS</a></li>
             </ul>
-            <a href="#" class="btn">BOOK NOW</a>
+            <a href="interface.jsp" class="btn">BOOK NOW</a>
         </header>
 
         <section>

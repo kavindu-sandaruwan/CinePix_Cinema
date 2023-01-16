@@ -28,7 +28,7 @@
                 <li><a href="#home" class="home-active">HOME</a></li>
                 <li><a href="#movies">MOVIES</a></li>
                 <li><a href="#soon">UPCOMING</a></li>
-                <li><a href="#news">NEWS</a></li>
+                <li><a href="NewsPage.jsp#news">NEWS</a></li>
             </ul>
             <a href="#" class="btn">BOOK NOW</a>
         </header>
