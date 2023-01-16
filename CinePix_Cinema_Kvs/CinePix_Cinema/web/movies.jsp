@@ -146,7 +146,7 @@
                         </div>
                         <div class="footer-col">
                             <ul class="footer-menu1">
-                                <li><a href="#">CONTACT US</a></li>
+                                <li><a href="Booking_cancel.jsp">Booking Cancel</a></li>
                                 <li><a href="aboutus.jsp">ABOUT US</a></li>
                                 <li><a href="feedback.jsp">FEEDBACK</a></li>
                                 <li><a href="terms_condition.jsp">TERMS AND CONDITIONS</a></li>
