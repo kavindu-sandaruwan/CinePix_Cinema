@@ -30,7 +30,7 @@
                 <li><a href="#soon">UPCOMING</a></li>
                 <li><a href="NewsPage.jsp#news">NEWS</a></li>
             </ul>
-            <a href="#" class="btn">BOOK NOW</a>
+            <a href="interface.jsp" class="btn">BOOK NOW</a>
         </header>
 
         <!-- Swiper -->
