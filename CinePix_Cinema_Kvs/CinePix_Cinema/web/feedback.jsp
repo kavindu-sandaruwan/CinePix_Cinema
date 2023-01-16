@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
         <!-- custom CSS file -->
-        <link rel="stylesheet" href="feedback.css">
+        <link rel="stylesheet" type="text/css" href="feedback.css">
         <link rel="stylesheet" href="Style.css">
 
 
@@ -47,7 +47,7 @@
                 <li><a href="index.jsp#soon">UPCOMING</a></li>
                 <li><a href="index.jsp#news">NEWS</a></li>
             </ul>
-            <a href="#" class="btn">BOOK NOW</a>
+            <a href="interface.jsp" class="btn">BOOK NOW</a>
         </header>
 
         <section>
@@ -87,8 +87,8 @@
                 </div>
                 <br>
                 <!--<button type="submit" class="btn-primary">Send Feedback</button>-->
-                <input type="submit" value="submit" name="btn">
-
+                <input type="submit" value="submit" name="btn" class="btn-primary"/>
+               
             </form>
 
 
@@ -111,7 +111,7 @@
                     </div>
                     <div class="footer-col">
                         <ul class="footer-menu1">
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="Booking_cancel.jsp">Booking Cancel</a></li>
                             <li><a href="aboutus.jsp">ABOUT US</a></li>
                             <li><a href="Updated_feedback.jsp">FEEDBACK</a></li>
                             <li><a href="terms_condition.jsp">TERMS AND CONDITIONS</a></li>

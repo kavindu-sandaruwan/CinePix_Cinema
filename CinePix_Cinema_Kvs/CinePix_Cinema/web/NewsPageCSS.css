@@ -1,0 +1,135 @@
+body{
+    background-color: #000025;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding-left: 250px;
+    padding-right: 330px;    
+}
+
+.blog-section {
+    padding-top: 130px;
+}
+
+
+/*responsive*/
+@media(max-width: 1080px){
+    .home-text{
+        padding: 0 100px;
+    }
+}
+@media(max-width: 991px){
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+    .home-text{
+        padding: 0 4%;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+}
+@media(max-width: 795px){
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        display: initial;
+        color: #fff;
+    }
+    #menu-icon:hover{
+        color: #ffff00;
+    }
+    header.shadow #menu-icon{
+        color: #fff;
+    }
+    .navigation{
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000025;
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+        transition: 0.2s all linear;
+        text-align: center;
+    }
+    .navigation a{
+        color: #fff;
+    }
+    .navigation a:hover{
+        color: #ffff00;
+        border-bottom: 1px solid #ffff00;
+    }
+    .navigation a::after{
+        display: none;
+    }
+    .navigation.active{
+        top: 100%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .btn{
+        padding: 0.6rem 1.2rem;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(160px,auto))
+    }
+    
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .footer-col{
+        width: 100%;
+    }
+}
+@media(max-width: 472px){
+    .news form .email{
+        width: auto;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .footer-col{
+        width: 100%;
+    }
+}
+@media(max-width: 370px){
+    header{
+        padding: 6px 4%;
+    }
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+    .play{
+        right: 2rem;
+        bottom: 8%;
+    }
+    .play .bx{
+        padding: 7px;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(140px,auto))
+    }
+    .box .box-img{
+        height: 240px;
+    }
+}
+
+
+
+
+
+
