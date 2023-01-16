@@ -44,7 +44,7 @@
         <div class="blog-section">
             <div class="section-content blog">
                 <div class="title">
-                    <h2>News</h2>
+                    <h1>News</h1><br>
                     <hr size="1" width="968px" color="#ffff00"><br>
                 </div>
                 

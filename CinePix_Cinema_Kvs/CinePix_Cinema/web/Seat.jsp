@@ -11,8 +11,31 @@
         <title>JSP Page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+        <link rel="stylesheet" href="seatCSS.css">
+        
+        <!-- swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <!-- Boxicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        
     </head>
     <body onload="checkCheckbox()">
+        
+        
+                         <header id="header">
+            <a href="#" class="logo">
+                <i class='bx bxs-movie-play'></i>CinePix<br>CINEMAS
+            </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="navigation">
+                <li><a href="index.jsp#home">HOME</a></li>
+                <li><a href="index.jsp#movies">MOVIES</a></li>
+                <li><a href="index.jsp#soon">UPCOMING</a></li>
+                <li><a href="index.jsp#news">NEWS</a></li>
+            </ul>
+            <a href="interface.jsp" class="btn">BOOK NOW</a>
+        </header>
 
         <!--Data fetch using Database-->
         <%
@@ -304,10 +327,10 @@
 
 
 
-
-
-
+                    <div class="container">
+                        <center>
                         <!--Seat Row 1-->
+                        
                         <table class="sticky-enabled">
                             <tr>
                                 <td>
@@ -506,6 +529,7 @@
                                 </td> 
                             </tr>
                         </table>
+                        
                         <br> 
 
 
@@ -558,13 +582,17 @@
                             <input type="text" id="result" name="result1" placeholder="Result" readonly />
                             <input type="text" id="myButton" name="count" placeholder="Count" readonly />
 
-                            <button type="submit" class="btn btn-success" name="checkout">Submit</button>
+                            <button type="submit" class="submitBTN" name="checkout">Submit</button>
 
                         </form>
-
+                        </center>
+                    </div>
                     </div>
                 </div>
+           
             </div>   
+            </div>
+        
             <input type="text" id="ab" value="<%=request.getAttribute("concatenatedString")%>" hidden />
 
 
@@ -612,7 +640,58 @@
                 document.getElementsByName('seatbtn').disabled = true;
                 }
             </script>
+            
+            <br><br> <!-- footer -->
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <ul class="footer-menu1">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#movies">MOVIES</a></li>
+                            <li><a href="#soon">UPCOMING</a></li>
+                            <li><a href="#news">NEWS</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul class="footer-menu1">
+                            <li><a href="Booking_cancel.jsp">Booking Cancel</a></li>
+                            <li><a href="aboutus.jsp">ABOUT US</a></li>
+                            <li><a href="feedback.jsp">FEEDBACK</a></li>
+                            <li><a href="terms_condition.jsp">TERMS AND CONDITIONS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+
+            <a href="#" class="logo">
+                <i class='bx bxs-movie-play'></i>CinePix<br>CINEMAS
+            </a>
+            <div class="social">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/?lang=en"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.tiktok.com/en/"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+
+
+        </section>
+        
+        <!--Contact-->
+        <div class="contact">
+            <p>Email : cinepixcinema5@gmail.com</p>
+            <p>contact no : +941123456789</p>
+
+        </div>
+        
+        <!-- copyrights -->
+        <div class="copyright">
+            <p>&#169; 2023 CinePix Cinemas All Right Reserved.</p>
+        </div>
+        <!-- swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
 
     </body>
 </html>

@@ -44,6 +44,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <!--Rating Star icon-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            .input {width: 300px;}
+            .tag {padding-right: 40px;}
+            h3 {padding-right: 280px;}
+        </style>
 
     </head>
     <body>
@@ -67,26 +73,28 @@
 
 
     <center>
+        <h3>Ticket Booking Form</h3><br>
+         <hr size="1" width="32%" color="#ffff00">
         <form method="POST" action="Seat.jsp">
             <table name="buyticket">
                 <tr>
-                    <td>Movie Name</td>
-                    <td><input type="text" name="Mname" value="<%=name%>" readonly></td>
+                    <td class="tag"><br>Movie Name </td>
+                    <td><br><input type="text" name="Mname" class="input" value="<%=name%>" readonly></td>
                 </tr>
 
                 <tr>
-                    <td>Ticket Price(LKR)</td>
-                    <td><input type="text" name="count" value="500" readonly></td>
+                    <td class="tag"><br>Ticket Price(LKR)</td>
+                    <td><br><input type="text" name="count" class="input" value="500" readonly></td>
                 </tr>
 
                 <tr>
-                    <td>Customer Name</td>
-                    <td><input type="text" name="Cname" required></td>
+                    <td class="tag"><br>Customer Name </td>
+                    <td><br><input type="text" name="Cname" class="input" required></td>
                 </tr>
 
                 <tr>
-                    <td>Email</td>
-                    <td><input type="email" name="Email" required></td>
+                    <td class="tag"><br>Email </td>
+                    <td><br><input type="email" name="Email" class="input" required></td>
                 </tr>
             </table>
 
@@ -134,9 +142,9 @@
                 }
             %>
 
-
+           
             <div class="buy">
-                <button type="submit" class="btn" name="seat" value="<%=M_id%>">NEXT</button>
+               <br> <button type="submit" class="btn" name="seat" value="<%=M_id%>">NEXT</button>
             </div>
         </form>
     </center>
