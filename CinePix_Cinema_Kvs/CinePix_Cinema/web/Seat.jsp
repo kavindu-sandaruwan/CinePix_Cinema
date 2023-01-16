@@ -69,7 +69,13 @@
             }
         %>
         <!--Data fetch using Database-->
-
+        <section>
+            <div class="warning">
+                <p>
+                    Note that you need to book a seat at once and you cannot change your first booking once you have done so.
+                </p>
+            </div>
+        </section>
 
         <!--Seat Arrangement  Info-->
         <div class="container">
