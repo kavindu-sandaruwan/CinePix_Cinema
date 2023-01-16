@@ -19,6 +19,7 @@
         
         <link rel="icon" type="image/x-icon" href="img/icon.png">
         <link rel="stylesheet" type="text/css" href="interfaceCSS.css">
+        <link rel="stylesheet" type="text/css" href="Style.css">
         <!-- swiper CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
         <!-- Boxicon -->
@@ -144,7 +145,7 @@
                         <ul class="footer-menu1">
                             <li><a href="Booking_cancel.jsp">Booking Cancel</a></li>
                             <li><a href="aboutus.jsp">ABOUT US</a></li>
-                            <li><a href="Updated_feedback.jsp">FEEDBACK</a></li>
+                            <li><a href="feedback.jsp">FEEDBACK</a></li>
                             <li><a href="terms_condition.jsp">TERMS AND CONDITIONS</a></li>
                         </ul>
                     </div>
