@@ -24,45 +24,42 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `feedback`
+-- Table structure for table `seatbooking`
 --
 
-CREATE TABLE `feedback` (
-  `id` int(50) NOT NULL,
-  `InputName` varchar(255) NOT NULL,
-  `InputEmail1` varchar(255) NOT NULL,
-  `InputCN` varchar(10) NOT NULL,
-  `FormControlTextarea1` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `seatbooking` (
+  `seatid` int(11) NOT NULL,
+  `seatno` text NOT NULL,
+  `M_ID` varchar(10) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `feedback`
+-- Dumping data for table `seatbooking`
 --
 
-INSERT INTO `feedback` (`id`, `InputName`, `InputEmail1`, `InputCN`, `FormControlTextarea1`) VALUES
-(1, 'Vinuri Disara', 'vinuridisara2020@gmail.com', '0717044607', 'defe'),
-(2, 'Vinuri', 'vinuridisara2020@gmail.com', '0717044607', 'sdcerg'),
-(3, 'Vinuri Disara', 'vinuridisara2020@gmail.com', '717044607', 'vs grg');
+INSERT INTO `seatbooking` (`seatid`, `seatno`, `M_ID`) VALUES
+(24, 'AB01,AB21,AB22,AB25,AB26,AB27,AB28,AB34,AB35,AB36,AB37,', '1001');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `feedback`
+-- Indexes for table `seatbooking`
 --
-ALTER TABLE `feedback`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `seatbooking`
+  ADD PRIMARY KEY (`seatid`),
+  ADD KEY `M_ID` (`M_ID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `feedback`
+-- AUTO_INCREMENT for table `seatbooking`
 --
-ALTER TABLE `feedback`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `seatbooking`
+  MODIFY `seatid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
