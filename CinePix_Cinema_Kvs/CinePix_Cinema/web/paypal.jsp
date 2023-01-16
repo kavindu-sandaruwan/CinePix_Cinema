@@ -33,27 +33,27 @@
 
                     <tr>
                         <td>Film Name </td>
-                        <td><input type="text" name="product" value="Avatar the way of water" class="textbox"/></td>
+                        <td><input type="text" name="product" value="Avatar the way of water" class="textbox" readonly/></td>
                     </tr>
 
                     <tr>
-                        <td>Adult (560)</td>
-                        <td><input type="text" name="subtotal" value="100" class="textbox"/></td>
+                        <td>Ticket Fee (500)</td>
+                        <td><input type="text" name="subtotal" value="100" class="textbox" readonly/></td>
                     </tr>
 
                     <tr>
-                        <td>Child (380)</td>
-                        <td><input type="text" name="shipping" value="10" class="textbox"/></td>
+                        <td>Booking Fee</td>
+                        <td><input type="text" name="shipping" value="0" class="textbox" readonly/></td>
                     </tr>
 
                     <tr>
-                        <td>Ticket Count</td>
-                        <td><input type="text" name="tax" value="10" class="textbox"/></td>
+                        <td>Tax</td>
+                        <td><input type="text" name="tax" value="0" class="textbox" readonly/></td>
                     </tr>
 
                     <tr>
                         <td>Total Amount</td>
-                        <td><input type="text" name="total" value="120" class="textbox" /></td>
+                        <td><input type="text" name="total" value="" class="textbox" readonly/></td>
                     </tr>
 
                     <tr>
