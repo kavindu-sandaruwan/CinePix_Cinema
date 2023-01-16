@@ -84,7 +84,7 @@
 
                 <tr>
                     <td class="tag"><br>Ticket Price(LKR)</td>
-                    <td><br><input type="text" name="count" class="input" value="500" readonly></td>
+                    <td><br><input type="text" name="price" class="input" value="730" readonly></td>
                 </tr>
 
                 <tr>

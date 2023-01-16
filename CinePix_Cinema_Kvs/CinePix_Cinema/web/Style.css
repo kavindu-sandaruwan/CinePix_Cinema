@@ -295,6 +295,7 @@ header.shadow{
 .footer .container{
     max-width: 968px;
     margin: auto;
+    text-transform: uppercase;
     
 }
 .footer-row{

@@ -40,10 +40,14 @@
         <!--Data fetch using Database-->
         <%
             String url = "jdbc:mysql://localhost:3306/cinepix";
-            String id = request.getParameter("selectdate");
+            String date_id = request.getParameter("selectdate");
+            String Mname = request.getParameter("Mname");
+            String price = request.getParameter("price");
+            String user = request.getParameter("Cname");
+            String email = request.getParameter("Email");
             String username = "root";
             String password = "";
-            String query = "SELECT * FROM seatbooking where M_ID ='" + id + "'";
+            String query = "SELECT * FROM seatbooking where M_ID ='" + date_id + "'";
             
 
             try {
@@ -584,9 +588,16 @@
 
                         <form action="seatbooking" method="post" >
 
-
+                            
                             <input type="text" id="result" name="result1" placeholder="Result" readonly />
                             <input type="text" id="myButton" name="count" placeholder="Count" readonly />
+                            
+                            <input type="text" name="date_id" value="<%=date_id%>" hidden/>
+                            <input type="text" name="Mname" value="<%=Mname%>" hidden />
+                            <input type="text" name="price" value="<%=price%>" hidden />
+                            <input type="text" name="user" value="<%=user%>" hidden />
+                            <input type="text" name="email" value="<%=email%>" hidden />
+                            
 
                             <button type="submit" class="submitBTN" name="checkout">Submit</button>
 

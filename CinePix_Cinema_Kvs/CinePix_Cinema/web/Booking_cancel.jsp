@@ -93,7 +93,7 @@
                 </div>
 
                 <br>
-                <button type="submit" class="btn-primary">Send Feedback</button>
+                <button type="submit" class="btn-primary">Send</button>
 
             </form>
 
