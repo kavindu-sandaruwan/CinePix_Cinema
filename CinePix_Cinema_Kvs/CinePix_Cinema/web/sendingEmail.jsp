@@ -1,26 +1,23 @@
-<%-- 
-    Document   : error
-    Created on : Jan 13, 2023, 2:11:11 AM
-    Author     : vinuri
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Payment Error</title>
+        <title>Send Mail Page</title>
 
-        <link rel="stylesheet" type="text/css" href="errorCSS.css">
+        <link rel="stylesheet" type="text/css" href="sendingEmailCSS.css">
         
+         
         <link rel="icon" type="image/x-icon" href="img/icon.png">
         <link rel="stylesheet" type="text/css" href="Style.css">
         <!-- swiper CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
         <!-- Boxicon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    </head>
 
+
+    </head>
     <body>
         
          <header id="header">
@@ -37,18 +34,58 @@
             <a href="interface.jsp" class="btn">BOOK NOW</a>
         </header>
         
-    <center>
-        <h1>Payment Error</h1>
-        <br/>
+        <div class="container">
+            <form action="email" method="POST" class="form_content">
+                <table>
 
-        <img src="img/close.png">
+                    <h1>PayPal Confirmation Email</h1>
+                    <br><hr size="1" width="68%" color="#ffff00"> 
+                    <br>
 
-        <h3>${errorMessage}</h3>
-        <br/>
-    </center>
-    
-    <!-- footer -->
-    <br><br><br>
+                    <div class="mb-3">
+                        <tr>
+                            <td><lable for="exampleFormControlInput1" class="form-label">Movie Name</lable></td>
+                        <td><br><input type="text"  name="moviename" class="form-control"  id="exampleFormControlInput1" placeholder="Enter Movie Name"></td>
+                        </tr>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <tr>
+                            <td><label for="exampleFormControlInput1" class="form-label">Email</label></td>
+                            <td><br><input type="email" name="email" class="form-control" v id="exampleFormControlInput1" placeholder="Enter Email"></td>
+                        </tr>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <tr>
+                            <td><label for="exampleFormControlInput1" class="form-label">Date</label></td>
+                            <td><br><input type="date" name="date" class="form-control" id="exampleFormControlInput1" placeholder="Enter Date"></td>
+                        </tr>
+                    </div>
+
+
+
+                    <div class="mb-3">
+                        <tr>
+                            <td><label for="exampleFormControlTextarea1" class="form-label">Message</label></td>
+                            <td><br><textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea></td>
+                        </tr>
+                    </div>
+
+
+                    <tr>
+                        <td colspan="2" align="center" align="center"><br><br><button type="submit" class="btn-success">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <br>
+         <!-- footer -->
         <section class="footer">
             <div class="footer-container">
                 <div class="footer-row">
@@ -100,5 +137,5 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
         <script src="main.js"></script>
         
-</body>
+    </body>
 </html>

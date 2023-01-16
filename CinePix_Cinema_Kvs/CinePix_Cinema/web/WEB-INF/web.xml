@@ -16,6 +16,14 @@
         <servlet-name>ReviewPaymentServlet</servlet-name>
         <servlet-class>ReviewPaymentServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EmailSendingServlet</servlet-name>
+        <servlet-class>EmailSendingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>email</servlet-name>
+        <servlet-class>email</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>buytickets</servlet-name>
         <url-pattern>/buytickets</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>ReviewPaymentServlet</servlet-name>
         <url-pattern>/ReviewPaymentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EmailSendingServlet</servlet-name>
+        <url-pattern>/EmailSendingServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>email</servlet-name>
+        <url-pattern>/email</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

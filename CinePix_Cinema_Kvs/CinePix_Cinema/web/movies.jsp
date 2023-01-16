@@ -144,7 +144,7 @@
                                 <li><a href="index.jsp">HOME</a></li>
                                 <li><a href="index.jsp#movies">MOVIES</a></li>
                                 <li><a href="index.jsp#soon">UPCOMING</a></li>
-                                <li><a href="index.jsp#news">NEWS</a></li>
+                                <li><a href="newspage.jsp#news">NEWS</a></li>
                             </ul>
                         </div>
                         <div class="footer-col">
