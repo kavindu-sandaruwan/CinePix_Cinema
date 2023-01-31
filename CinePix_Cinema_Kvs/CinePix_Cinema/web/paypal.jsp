@@ -110,6 +110,7 @@
                         <td><input type="text" name="total" value="<%=resultSet.getString("total")%>" class="textbox" readonly/></td>
                     </tr>
                     
+                    <!--Submit checkout data into paypal API-->
                     <tr>
                         <td colspan="2" align="center"><br>
                             <input type="submit" value="Checkout" class="submitBTN"/>

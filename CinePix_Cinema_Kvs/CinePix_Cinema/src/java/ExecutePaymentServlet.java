@@ -38,7 +38,8 @@ public class ExecutePaymentServlet extends HttpServlet {
             request.setAttribute("payer", payerInfo);
             request.setAttribute("transaction", transaction);          
  
-            request.getRequestDispatcher("receipt.jsp").forward(request, response);
+            String url = "receipt.jsp?paymentId=" + paymentId + "&PayerID=" + payerId;
+            request.getRequestDispatcher(url).forward(request, response);
            // request.getRequestDispatcher("review.jsp").forward(request, response);
              
         } catch (PayPalRESTException ex) {

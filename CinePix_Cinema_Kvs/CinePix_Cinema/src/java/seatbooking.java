@@ -51,6 +51,9 @@ public class seatbooking extends HttpServlet {
             
                 String sql = "select * from seatbooking";
                 ResultSet rs=st.executeQuery(sql);
+                
+                //After sending data into the database we take the last booked seat id and parse it to paypal.jsp
+
                 if (rs.last()) {
                     seatid = rs.getInt("seatid");
                 }

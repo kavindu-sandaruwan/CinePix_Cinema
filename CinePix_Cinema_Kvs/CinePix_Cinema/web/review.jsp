@@ -52,7 +52,7 @@
                 
                 <table>
                     <tr>
-                        <td colspan="2"><b>Please press the Pay Now button then generate a receipt</b></td>
+                        <td colspan="2"><b>Please press the Generate button to generate a receipt</b></td>
                         <td>
                             <input type="hidden" name="paymentId" value="${param.paymentId}"/>
                             <input type="hidden" name="PayerID" value="${param.PayerID}" />
@@ -61,7 +61,7 @@
                     
                     <tr>
                         <td colspan="2" align="center">
-                            <input type="submit" value="Pay Now" class="btn" />
+                            <input type="submit" value="Generate" class="btn" />
                         </td>
                     </tr>
                 </table>

@@ -23,7 +23,7 @@
     <body onload="checkCheckbox()">
         
         
-                         <header id="header">
+        <header id="header">
             <a href="#" class="logo">
                 <i class='bx bxs-movie-play'></i>CinePix<br>CINEMAS
             </a>
@@ -614,7 +614,7 @@
 
 
 
-
+            <!--to get seat numbers to the below text box-->
             <script>
                 function addValues() {
                 var str = "";
@@ -628,6 +628,8 @@
                 }
             </script>
 
+            <!--To get seat count to the below textbox-->
+
             <script>
                 var clickCount = 0;
                         function countClicks() {
@@ -637,7 +639,7 @@
             </script>
 
 
-
+            <!--Retrieve the previous booking seats from the database and disable the booked seats for new customers-->
             <script type="text/javascript">
                 function checkCheckbox()
 

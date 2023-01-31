@@ -97,7 +97,7 @@
 
             </form>
 
-            
+
 
         </div>
 
@@ -154,7 +154,7 @@
                 <p>&#169; 2023 CinePix Cinemas All Right Reserved.</p>
             </div>
         </footer>
-        
+
         <script src="main.js"></script>
     </body>
 </html>
