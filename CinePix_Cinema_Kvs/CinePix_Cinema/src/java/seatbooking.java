@@ -28,7 +28,7 @@ public class seatbooking extends HttpServlet {
 
         int count1 = Integer.parseInt(count);
         int price1 = Integer.parseInt(price);
-        int total = (count1 * price1) / 360;
+        int total = (count1 * price1) / 365;
 
         int seatid=0;
         for (String value : values) {

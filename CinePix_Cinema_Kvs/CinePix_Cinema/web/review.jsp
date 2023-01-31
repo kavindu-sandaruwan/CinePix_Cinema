@@ -48,7 +48,7 @@
             
             <h1>Please Generate a receipt</h1>
             
-            <form action="execute_payment" method="post">
+            <form action="ExecutePaymentServlet" method="post">
                 
                 <table>
                     <tr>

@@ -82,7 +82,7 @@
                             while (resultSet.next()) {
                     %>
             <!--FORM 1-->
-            <form action="authorize_payment" method="post" id="form1">
+            <form action="AuthorizePaymentServlet" method="post" id="form1">
                 <table class="table1">
                     
                     <tr>
